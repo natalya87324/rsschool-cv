@@ -26,3 +26,18 @@ I've worked for a long period of time in two international companies which has g
 - Git
 
 ---
+
+## Code example
+
+**Udemy "JS challenges" by Brad Traversy** <br> **_Instruction:_** Write a function called `reverseString` that takes in a string and returns the reversed version of the string. Be sure to use recursion in your solution.
+
+```JS
+
+function reverseString(str) {
+  if (str === '') {
+    return '';
+  }
+  reverseString(str.slice(1));
+  return reverseString(str.slice(1)) + str[0];
+}
+```
